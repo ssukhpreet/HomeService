@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="a2z Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script>
+
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--banner slider  -->
+    <link href="~/css/JiSlider.css" rel="stylesheet">
+    <!-- //banner-slider -->
+    <link href="~/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- js -->
+    <script src="~/js/jquery-2.2.3.min.js"></script>
+    <!-- //js-->
+    <!--banner-slider-->
+    <script src="~/js/JiSlider.js"></script>
+    <script>
+        $(window).load(function () {
+            $('#JiSlider').JiSlider({
+                color: '#fff',
+                start: 1,
+                reverse: false
+            }).addClass('ff')
+        })
+    </script>
+    <!-- //banner-slider -->
+    <!--search-bar-->
+    <script src="~/js/main.js"></script>
+    <!--//search-bar-->
+    <!-- start-smooth-scrolling -->
+    <script src="~/js/move-top.js"></script>
+    <script src="~/js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <style>
+        * {
+            margin:0px;
+        }
+
+    </style>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+            */
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="~/js/SmoothScroll.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/js/bootstrap.js"></script>
+
+
+</head>
+<body>
+
+    <!-- header -->
+    <div class="w3layouts-header">
+        <div class="container">
+
+
+            <div class="clearfix"> </div>
+            <div class="logo-nav-left1">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                            Menu
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                @Html.ActionLink("Home", "Index", "Home")
+                            </li>
+
+
+                            <li>
+                                @Html.ActionLink("Contact", "Contact", "Home")
+                            </li>
+
+                            <li>
+                                @Html.ActionLink("Pannel", "Login", "Home")
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+       
+        <div class="clearfix"> </div>
+    </div>
+            
+   
+    <!-- //header -->
+
+
+
+
+
+    <div class="container-fluid body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    <!-- footer -->
+    
+    <div class="cpy-footer">
+        <div class="container">
+            <div class="footer-top">
+               
+             
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="cpy-text">
+            <p>
+                © 2020 A2Z. All rights reserved
+
+            </p>
+        </div>
+
+    </div>
+    <!--//footer  -->
+
+</body>
+</html>

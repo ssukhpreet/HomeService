@@ -1,0 +1,40 @@
+﻿@model IEnumerable<HomeService.Models.Service>
+
+@{
+    ViewBag.Title = "ViewStaff";
+}
+
+<h2>View All Services </h2>
+
+<p>
+    @Html.ActionLink("Add New Services ", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ServiceName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>Edit </th>
+        <th>Delete </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) </td>
+            <td>
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

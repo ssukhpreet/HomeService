@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "HomePannel";
+}
+<style>
+    .ok h3 {
+        border:1px solid red;
+        height:50px;
+        margin:10px;
+        line-height:40px;
+        padding:10px;
+    }
+        .ok h3:hover {
+            background-color:grey;
+            color:white;
+            font-size:30px;
+        }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 ok">
+            <h1>Home Pannel</h1>
+
+            <h3>
+                @Html.ActionLink("Customer Details", "CustomerDetails", "Customer")
+            </h3>
+
+            <h3>
+                @Html.ActionLink("Staff Details", "StaffDetails", "Staff")
+            </h3>
+
+            <h3>
+                @Html.ActionLink("Customer Service", "ViewStaff", "Service")
+            </h3>
+
+            <h3>
+                @Html.ActionLink("Contact View ", "QueryList", "Contact")
+            </h3>
+
+        </div>
+
+    </div>
+    
+
+</div>
+
+
